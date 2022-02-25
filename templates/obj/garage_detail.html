@@ -1,0 +1,13 @@
+<h1>{{garage_detail}}</h1>
+
+{% for i in garage_detail %}
+<ol>
+    <li>{{i.garage_name}}</li>
+    <li>{{i.garage_address}}</li>
+    <li>{{i.garage_status}}</li>
+    <li>{{i.garage_owner_name}}</li>
+    <li>{{i.garage_owner_email}}</li>
+    <li>{{i.garage_owner_contact}}</li>
+<ol>
+<br>
+{% endfor %}
