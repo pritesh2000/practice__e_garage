@@ -21,5 +21,7 @@ urlpatterns = [
     path('home/', include('home.urls')),
     path('obj/', include('obj.urls')),
     path('crudfunc/', include('crudfunc.urls')),
+    path('order/', include('order.urls')),
+
 
 ]

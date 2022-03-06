@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home',
     'obj',
     'crudfunc',
+    'order',
 ]
 
 MIDDLEWARE = [
