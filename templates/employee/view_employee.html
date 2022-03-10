@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Date of birth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form method="post">
+                {% for employee in employees %}
+                <tr>
+                    <td>{{employee.emp_name}}</td>
+                    <td>{{employee.emp_email}}</td>
+                    <!-- <td>{{employee.emp_password}}</td> -->
+                    <td>{{employee.emp_phone}}</td>
+                    <td>{{employee.emp_dob}}</td>
+
+                </tr>
+                {% endfor %}
+
+
+            </form>
+        </tbody>
+    </table>
+</body>
+
+</html>

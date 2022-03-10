@@ -22,6 +22,5 @@ urlpatterns = [
     path('obj/', include('obj.urls')),
     path('crudfunc/', include('crudfunc.urls')),
     path('order/', include('order.urls')),
-
-
+    path('employee/', include('employee.urls')),
 ]

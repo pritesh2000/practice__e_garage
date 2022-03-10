@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'obj',
     'crudfunc',
     'order',
+    'employee',
 ]
 
 MIDDLEWARE = [
