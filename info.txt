@@ -1,0 +1,17 @@
+this is a project file base on e-garage django project.
+
+here I made project file Apps for some dummy project.
+
+There is crudfunc app which implement CRUD operation for models in database.
+
+In employee app there is create and list views are there.
+
+Generic app is for abstract class which won't be migrated in models (There is BaseField only.)
+
+In home app there is nothing much only redirecting urls.
+
+In obj app there is nothing much.
+
+In order app there is two createview in views.py and two models in models.py
+
+In userapp app there is abstractuser in models.py and also there is forms.py in there views.py is right now untouched.

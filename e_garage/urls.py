@@ -23,4 +23,5 @@ urlpatterns = [
     path('crudfunc/', include('crudfunc.urls')),
     path('order/', include('order.urls')),
     path('employee/', include('employee.urls')),
+    path('user/', include('userapp.urls')),
 ]
