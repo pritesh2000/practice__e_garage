@@ -1,18 +1,31 @@
+{% load static %}
+<html>
+<head><title>Registration Page</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'registration/style.css' %}">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--- Include the above in your HEAD tag -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
+
+
 <body>
-    <h1>Registration</h1>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit">Register</button>
-    </form>
+<div class="page-container">
+            
+            <form action="#" method="POST">
+            {% csrf_token %}
+			<h1>Sign Up</h1>
+                <input type="text" name="name" class="Name" placeholder="Name">
+                <input type="text" name="tele" class="Tele" placeholder="Number Phone">
+				<input type="text" name="email" class="Email" placeholder="Email">
+				<input type="password" name="password" class="Address" placeholder="password">
+                <button type="submit" value="Add" name="submit">Submit</button>
+            </form>
+        </div>
+		
+
 </body>
 </html>

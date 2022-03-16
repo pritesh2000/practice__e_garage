@@ -18,12 +18,10 @@ class User(AbstractUser):
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email']
-
+    
 
     class Meta():
         db_table = 'User'
 
     def __str__(self):
         return self.username
-
-

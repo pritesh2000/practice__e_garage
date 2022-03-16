@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {% block title %}
+    <title>Document</title>
+    {% endblock title %}
+
+    {% block meta_tags %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% endblock meta_tags %}
+
+    {% block custom_css %}
+    {% endblock custom_css %}
+
+    {% block css %}
+    {% endblock css %}
+
+</head>
+<body>
+
+
+    <div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+
+        {% block header %}{% endblock header %}
+
+        {% block container %}{% endblock container %}
+
+        {% block footer %}{% endblock footer %}
+    
+    </div>
+
+    {% block custom_js %}{% endblock custom_js %}
+    
+</body>
+</html>
