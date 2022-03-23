@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'employee',
     'userapp',
     'crispy_forms',
+    'sendmail',
+    'piechart',
 ]
 
 AUTH_USER_MODEL = 'userapp.User'
@@ -91,7 +93,7 @@ WSGI_APPLICATION = 'e_garage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'practice_e_garage',
+        'NAME': 'practice_e_garage1',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': 'localhost',
@@ -144,3 +146,11 @@ STATICFILES_DIRS = [STATIC_DIR,]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = '/user/index/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'egarage1234@gmail.com'
+EMAIL_HOST_PASSWORD = 'python@1234'
+

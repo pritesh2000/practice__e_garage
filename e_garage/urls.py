@@ -24,4 +24,6 @@ urlpatterns = [
     path('order/', include('order.urls')),
     path('employee/', include('employee.urls')),
     path('user/', include('userapp.urls')),
+    path('sendmail/', include('sendmail.urls')),
+    path('pie/', include('piechart.urls')),
 ]

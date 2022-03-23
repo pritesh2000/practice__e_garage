@@ -14,4 +14,7 @@ In obj app there is nothing much.
 
 In order app there is two createview in views.py and two models in models.py
 
-In userapp app there is abstractuser in models.py and also there is forms.py in there views.py is right now untouched.
+In userapp app there is abstractuser in models.py and also there is forms.py in there, views.py is right now untouched.
+Above work is done.
+
+And also learnt to send email and how to create pie chart.
